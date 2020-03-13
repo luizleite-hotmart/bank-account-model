@@ -10,7 +10,7 @@ public class AccountFieldsTest {
 
     @Test
     public void createModelFromAccountField() {
-        AccountField accountField = new AccountField(1L,"name", "regex", "type", "description");
+        AccountField accountField = new AccountField("name", "regex", "type", "description");
 
         assertEquals("name", accountField.getName());
         assertEquals("regex", accountField.getRegex());

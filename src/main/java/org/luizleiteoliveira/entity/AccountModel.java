@@ -1,11 +1,16 @@
 package org.luizleiteoliveira.entity;
 
+import java.util.Collections;
 import java.util.List;
 
 public class AccountModel {
 
     private String country;
-    private List<AccountField> accountFields;
+    private List<AccountField> accountFields = Collections.EMPTY_LIST;
+
+    public AccountModel(String country) {
+        this.country = country;
+    }
 
     public AccountModel(String country, List<AccountField> accountFieldList) {
         this.country = country;

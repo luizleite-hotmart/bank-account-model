@@ -4,15 +4,13 @@ import java.io.Serializable;
 
 public class AccountField implements Serializable {
 
-    private Long id;
     private String name;
     private String regex;
     private String type;
     private String description;
 
 
-    public AccountField(Long id,String name, String regex, String type, String description) {
-        this.id = id;
+    public AccountField(String name, String regex, String type, String description) {
         this.name = name;
         this.regex = regex;
         this.type = type;
@@ -51,11 +49,4 @@ public class AccountField implements Serializable {
         this.description = description;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }
