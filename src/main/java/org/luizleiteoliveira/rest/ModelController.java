@@ -9,7 +9,6 @@ import javax.ws.rs.core.Response;
 @Path("/models")
 public class ModelController {
 
-
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getModelFromCountry() {
