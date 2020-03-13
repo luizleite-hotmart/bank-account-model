@@ -1,12 +1,13 @@
 package org.luizleiteoliveira.entity;
 
-import java.util.Collections;
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class AccountModel {
+public class AccountModel implements Serializable {
 
     private String country;
-    private List<AccountField> accountFields = Collections.EMPTY_LIST;
+    private List<AccountField> accountFields  = new ArrayList<>();
 
     public AccountModel(String country) {
         this.country = country;

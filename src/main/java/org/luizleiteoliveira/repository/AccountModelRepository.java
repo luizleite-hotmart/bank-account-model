@@ -13,7 +13,7 @@ public class AccountModelRepository {
     static Map<String, AccountModel> data = new ConcurrentHashMap<>();
 
     public List<AccountModel> findAll() {
-        return new ArrayList<AccountModel>(data.values());
+        return new ArrayList<>(data.values());
     }
 
     public AccountModel findByCountry(String country) {
