@@ -33,8 +33,6 @@ public class Initializer {
             .add(new AccountField("state", "^.{1,255}", "", "state"));
         accountModelMexico.getAccountFields()
             .add(new AccountField("identification_value", "^(.{3}\\d{6}.{3}|.{4}\\d{6}.{3}|.{4}\\d{6}(M|H|m|h)[A-Za-z]{2}.{5})$", "", "identification_value"));
-        accountModelMexico.getAccountFields()
-            .add(new AccountField("identification_value", "^(.{3}\\d{6}.{3}|.{4}\\d{6}.{3}|.{4}\\d{6}(M|H|m|h)[A-Za-z]{2}.{5})$", "", "identification_value"));
         return accountModelMexico;
     }
 
