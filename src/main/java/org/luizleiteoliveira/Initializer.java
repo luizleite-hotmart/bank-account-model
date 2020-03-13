@@ -6,7 +6,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 import org.luizleiteoliveira.entity.AccountField;
-import org.luizleiteoliveira.entity.AccountFieldsRepository;
+import org.luizleiteoliveira.repository.AccountFieldsRepository;
 
 @ApplicationScoped
 public class Initializer {
@@ -22,5 +22,7 @@ public class Initializer {
         accountFieldsRepository.save(accountField);
         LOGGER.info(" #### End creation account models");
     }
+
+    private A
 
 }
