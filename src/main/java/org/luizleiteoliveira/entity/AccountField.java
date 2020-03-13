@@ -1,14 +1,18 @@
 package org.luizleiteoliveira.entity;
 
-public class AccountField {
+import java.io.Serializable;
 
+public class AccountField implements Serializable {
+
+    private Long id;
     private String name;
     private String regex;
     private String type;
     private String description;
 
 
-    public AccountField(String name, String regex, String type, String description) {
+    public AccountField(Long id,String name, String regex, String type, String description) {
+        this.id = id;
         this.name = name;
         this.regex = regex;
         this.type = type;
@@ -45,5 +49,13 @@ public class AccountField {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
